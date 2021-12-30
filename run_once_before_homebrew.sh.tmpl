@@ -1,7 +1,10 @@
 #!/bin/zsh
 
+{{ if not (lookPath "brew") -}}
 # install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+{{ end -}}
 
 # TODO: install from Brewfile
 # install chezmoi to path (was temporarily installed in $TMPDIR by install script)
