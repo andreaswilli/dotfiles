@@ -3,4 +3,5 @@
 cd {{ .chezmoi.sourceDir }}
 git remote set-url origin git@github.com:andreaswilli/dotfiles.git
 
-# TODO: add key to ssh-agent (and use keychain)
+# this allows us to store the passphrase in keychain
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
