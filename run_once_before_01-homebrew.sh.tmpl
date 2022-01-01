@@ -1,13 +1,15 @@
 #!/bin/zsh
 
 {{ if not (lookPath "brew") -}}
-# install Homebrew
+echo "🍺 Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "🍺 Successfully installed Homebrew."
 
 {{ end -}}
 
-# install software with Homebrew/mas-cli
+echo "🍺 Installing software with Homebrew/mas-cli..."
 # this installs chezmoi to path (was temporarily installed in $TMPDIR by install script)
 HOMEBREW_CASK_OPTS=--no-quarantine brew bundle --no-lock --file=/dev/stdin <<EOF
 {{ include "Brewfile" }}
 EOF
+echo "🍺 Done."

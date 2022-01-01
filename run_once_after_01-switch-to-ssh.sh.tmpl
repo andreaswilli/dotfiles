@@ -1,7 +1,11 @@
 #!/bin/zsh
 
+echo "🔑 Switching repo url to use SSH..."
+
 cd {{ .chezmoi.sourceDir }}
 git remote set-url origin git@github.com:andreaswilli/dotfiles.git
 
-# this allows us to store the passphrase in keychain
+echo "🔑 Saving SSH passphrase in macOS Keychain..."
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+echo "🔑 Done."
