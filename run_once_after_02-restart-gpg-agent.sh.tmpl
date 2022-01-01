@@ -3,5 +3,5 @@
 # only run if the config file changed
 # gpg-agent.conf hash: {{ include "private_dot_gnupg/gpg-agent.conf" | sha256sum }}
 
-# restart gpg-agent on order to apply config changes
+# restart gpg-agent in order to apply config changes
 gpgconf --kill gpg-agent
