@@ -28,6 +28,32 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 killall Dock
 
 # =====================================
+# finder 
+# =====================================
+
+# always use list view
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# show all file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# disable extension change warning
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder PathBarRootAtHome -bool TRUE
+
+# new finder tab shows downloads
+defaults write com.apple.finder NewWindowTarget -string 'PfLo'
+defaults write com.apple.finder NewWindowTargetPath -string 'file:///Users/andi/Downloads/'
+
+# hide tags from sidebar
+defaults write com.apple.Finder ShowRecentTags -bool false
+
+killall Finder
+
+# =====================================
 # sound
 # =====================================
 
