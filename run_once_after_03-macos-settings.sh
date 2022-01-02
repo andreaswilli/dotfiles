@@ -56,7 +56,4 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # disable recent items
 defaults write NSGlobalDomain NSRecentDocumentsLimit 0
 
-# keep order of spaces
-defaults write com.apple.dock mru-spaces -int 0
-
 echo "⚙️  Done. Some settings get only applied after logout."
