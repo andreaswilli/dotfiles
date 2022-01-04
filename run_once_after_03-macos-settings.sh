@@ -25,6 +25,13 @@ defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 1000
 defaults write com.apple.dock no-bouncing -bool TRUE
+
+# hide recent applications
+defaults write com.apple.dock show-recents -int 0
+
+# hide indicators for open applications
+defaults write com.apple.dock show-process-indicators -int 0
+
 killall Dock
 
 # =====================================
