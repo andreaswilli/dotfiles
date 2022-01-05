@@ -4,6 +4,7 @@ echo "🔑 Switching repo url to use SSH..."
 
 cd {{ .chezmoi.sourceDir }}
 git remote set-url origin git@github.com:andreaswilli/dotfiles.git
+cd -
 
 echo "🔑 Saving SSH passphrase in macOS Keychain..."
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
