@@ -89,4 +89,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # disable recent items
 defaults write NSGlobalDomain NSRecentDocumentsLimit 0
 
+# enable scroll gesture to zoom
+defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -int 1
+
 echo "⚙️  Done. Some settings get only applied after logout."
