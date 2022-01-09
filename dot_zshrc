@@ -116,3 +116,8 @@ function zsh_directory_name() {
   done
   return 1
 }
+
+# enable z
+. /usr/local/etc/profile.d/z.sh
+
+alias rm=trash
