@@ -18,6 +18,17 @@ defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
 # =====================================
+# keyboard
+# =====================================
+
+# enable key-repeating (for vim in vscode)
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+# make repeat delays more suitable for use with vim
+defaults write "Apple Global Domain" InitialKeyRepeat -int 15
+defaults write "Apple Global Domain" KeyRepeat -int 2
+
+# =====================================
 # dock
 # =====================================
 
