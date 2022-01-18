@@ -20,7 +20,7 @@ cd $TMPDIR && sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply andreaswilli;
   - Mission Control
     - Automatically rearrange Spaces > uncheck
   - Keyboard
-  - Shortcuts > Spotlight > Show Spotlight search > `option+space`
+    - Shortcuts > Spotlight > Show Spotlight search > `option+space`
   - Bluetooth
     - Show Bluetooth in menu bar
   - Sound
