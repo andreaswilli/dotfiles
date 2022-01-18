@@ -19,7 +19,6 @@ brew "z"
 brew "yt-dlp/taps/yt-dlp"
 cask "alfred"
 cask "appcleaner"
-cask "bitwarden"
 cask "blobsaver"
 cask "boop"
 cask "discord"
@@ -45,6 +44,7 @@ cask "tunnelblick"
 cask "visual-studio-code"
 cask "webtorrent"
 cask "whatsapp"
+mas "Bitwarden", id: 1352778147
 mas "Gifski", id: 1351639930
 mas "iStudiez Pro", id: 402989379
 mas "Notability", id: 360593530
