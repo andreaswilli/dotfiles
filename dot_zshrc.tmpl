@@ -21,6 +21,10 @@ function zsh_directory_name() {
 }
 
 # enable z
+{{ if eq .chezmoi.arch "arm64" -}}
+. /opt/homebrew/etc/profile.d/z.sh
+{{- else -}}
 . /usr/local/etc/profile.d/z.sh
+{{- end }}
 
 alias rm=trash

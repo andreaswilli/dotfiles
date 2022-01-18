@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # only run if the config file changed
-# gpg-agent.conf hash: {{ include "private_dot_gnupg/gpg-agent.conf" | sha256sum }}
+# gpg-agent.conf hash: {{ include "private_dot_gnupg/gpg-agent.conf.tmpl" | sha256sum }}
 
 echo "🕵  Restarting gpg-agent to apply new config..."
 gpgconf --kill gpg-agent
