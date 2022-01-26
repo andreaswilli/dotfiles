@@ -21,6 +21,7 @@ cd $TMPDIR && sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply andreaswilli;
     - Automatically rearrange Spaces > uncheck
   - Keyboard
     - Shortcuts > Spotlight > Show Spotlight search > `option+space`
+    - press fn to > do nothing
   - Bluetooth
     - Show Bluetooth in menu bar
   - Sound
@@ -48,9 +49,15 @@ cd $TMPDIR && sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply andreaswilli;
     - Set shortcuts for Bitwarden extension on `chrome://extensions/shortcuts` (they are saved but for some reason don't work yet and need to be set again)
   - Raycast
     - Import settings from `/Users/andi/SynologyDrive/dotfiles/`
+    - Install plugins (do not seem to be part of the settings export):
+      - kill process
+      - search emoji
+      - search npm packages
   - Tunnelblick
     - Import config from `/Users/andi/SynologyDrive/dotfiles/`
   - BTTV Extension (Chromium)
     - Import settings from `/Users/andi/SynologyDrive/dotfiles/`
   - iTerm2
     - General > Preferences > Load preferences from a custom folder or URL > `/Users/andi/.config/iterm2-settings`
+  - Blobsaver
+    - Import settings from `/Users/andi/SynologyDrive/dotfiles/`
