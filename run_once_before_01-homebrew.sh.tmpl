@@ -7,6 +7,12 @@ echo "🍺 Successfully installed Homebrew."
 
 {{ end -}}
 
+{{ if eq .chezmoi.arch "arm64" -}}
+# install rosetta for software that does not run natively on M1
+sudo softwareupdate --install-rosetta
+
+{{ end -}}
+
 echo "🍺 Installing software with Homebrew/mas-cli..."
 # this installs chezmoi to path (was temporarily installed in $TMPDIR by install script)
 HOMEBREW_CASK_OPTS=--no-quarantine brew bundle --no-lock --file=/dev/stdin <<EOF
