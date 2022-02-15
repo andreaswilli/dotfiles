@@ -3,10 +3,8 @@
 ## Installing on a new device
 
 ```sh
-cd $TMPDIR && sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply andreaswilli; chezmoi apply && cd ~
+cd $TMPDIR && sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply andreaswilli && cd ~
 ```
-
-> Additional `chezmoi apply` because decryption fails on the first run (https://github.com/twpayne/chezmoi/issues/1794#issuecomment-1003427435).
 
 ### Manual steps
 
