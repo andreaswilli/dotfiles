@@ -13,7 +13,9 @@ brew "http-server"
 brew "mas"
 brew "n"
 brew "neovim"
+brew "perl"
 brew "pinentry-mac"
+brew "tmux"
 brew "trash"
 brew "z"
 brew "yt-dlp/taps/yt-dlp"
@@ -30,6 +32,7 @@ cask "iina"
 cask "imageoptim"
 cask "iterm2"
 cask "karabiner-elements"
+cask "mactex-no-gui"
 cask "notion"
 cask "plex"
 cask "raycast"
@@ -47,7 +50,9 @@ cask "webtorrent"
 cask "whatsapp"
 mas "Bitwarden", id: 1352778147
 mas "Gifski", id: 1351639930
+mas "Infuse", id: 1136220934
 mas "iStudiez Pro", id: 402989379
+mas "Keynote", id: 409183694
 mas "Notability", id: 360593530
 mas "Plash", id: 1494023538
 mas "Spark", id: 1176895641
