@@ -1,5 +1,6 @@
 set number
 set relativenumber
+set noshowmode
 
 call plug#begin()
 
